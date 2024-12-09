@@ -1,0 +1,27 @@
+**create**
+CREATE TABLE employee_detail (
+    emp_no INT AUTO_INCREMENT PRIMARY KEY,
+    employee_Name TEXT,
+    emp_email TEXT,
+    emp_pno INT,
+    emp_id TEXT,
+    emp_role TEXT,
+    company_name TEXT
+);
+
+
+**insert**
+INSERT INTO employee_detail (employee_Name, emp_email, emp_pno, emp_id, emp_role, company_name) VALUES ('Bala ', 'bala@gmail.com', 1234567890, 101, 'Developer', 'TechCorp');
+
+
+**update**
+UPDATE employee_detail SET employee_Name = 'rajesh',emp_email = 'rajesh@gmail.com',emp_pno = '987654323456',emp_id = '543',emp_role = 'developer',company_name = 'TechCorp International' WHERE emp_id = 101;
+
+
+
+**delete**
+1]DELETE FROM employee_detail WHERE emp_no = 1;
+
+
+**view**
+SELECT * FROM employee_detail;
